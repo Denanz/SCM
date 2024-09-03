@@ -6,4 +6,4 @@
 cut -d: -f1 /etc/passwd | sort
 ```
 
-![{B57EE711-72BB-4E28-8F5C-42FC2CD83638}](https://github.com/user-attachments/assets/7ee33e1e-5046-46eb-b85c-78d73cdae842)
+![{192BE454-1447-4196-9C1F-C4EE0BA14D8A}](https://github.com/user-attachments/assets/f93356a5-37cc-464d-afb7-20474bb1263e)
