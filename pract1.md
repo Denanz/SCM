@@ -110,3 +110,14 @@ grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' "$1" | sort | uniq - скрипт отб
 sort - сортировка 
 
 uniq - оставляет только уникальные значения
+
+## Задача 5 
+
+```
+chmod +x $1
+sudo cp $1 /usr/local/bin
+```
+
+![{78697D9E-24C4-4493-92D2-78600DE8A534}](https://github.com/user-attachments/assets/663f45db-b5cb-4aef-bf93-783bf18a396e)
+
+## Задача 6
