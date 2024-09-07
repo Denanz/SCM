@@ -21,13 +21,13 @@ sort — сортирует строки в алфавитном порядке.
 ## Задача 2
 
 ```
-awk '{print $3, $1}' /etc/protocols | sort -k1,1nr | head -n 5
+awk '{print $2, $1}' /etc/protocols | sort -k1,1nr | head -n 5
 ```
 ![{D60AF2B9-70F1-426B-8B43-A1925B360B05}](https://github.com/user-attachments/assets/296de080-b3b5-49a6-ad8e-9cff2bb4bcda)
 
 ### Объяснение
 
-awk '{print $3, $1}' /etc/protocols: Эта команда извлекает третий столбец и первый столбец из файла /etc/protocols и выводит их в формате номер имя.
+awk '{print $2, $1}' /etc/protocols: Эта команда извлекает второй столбец и первый столбец из файла /etc/protocols и выводит их в формате номер имя.
 
 sort -k1,1nr: Сортирует вывод по первому столбцу численно и в обратном порядке.
 
