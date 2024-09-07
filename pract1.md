@@ -80,6 +80,24 @@ fi
 
 grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' "$1" | sort | uniq
 ```
+### Вывод программы
+![{4B3F628A-BB82-445C-8444-2293B9C3EBC5}](https://github.com/user-attachments/assets/1876da5d-6c79-4633-b385-edcb7d0873b0)
+
+### Код из файла hello.c
+
+```
+#include <stdio.h>
+
+void hello_world() {
+    printf("Hello, world!\n");
+}
+
+int main() {
+    hello_world();
+    return 0;
+}
+
+```
 
 ### Объяснение 
 
