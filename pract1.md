@@ -125,11 +125,9 @@ sudo cp $1 /usr/local/bin
 ```
 #!/bin/bash
 
-# Проверяем все файлы с расширениями .c, .js и .py
 for file in *.{c,js,py}; do
-  # Проверяем, существует ли файл с таким расширением (может не быть файлов с таким расширением в папке)
+  # Проверяем, существует ли файл с таким расширением
   if [ -f "$file" ]; then
-    # Читаем первую строку файла
     first_line=$(head -n 1 "$file")
 
     # Проверяем наличие комментария
@@ -164,15 +162,12 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# Заданная директория
 directory=$1
 
-# Ассоциативный массив для хранения файлов по их хешам
 declare -A file_hashes
 
 # Поиск всех файлов в директории и подкаталогах
 find "$directory" -type f | while read -r file; do
-  # Вычисляем хеш файла
   hash=$(sha256sum "$file" | awk '{print $1}')
 
   # Проверяем, есть ли уже файл с таким хешем
@@ -192,18 +187,15 @@ done
 ```
 #!/bin/bash
 
-# Проверка количества аргументов
 if [ "$#" -ne 3 ]; then
     echo "Usage: $0 <directory> <extension> <archive_name>"
     exit 1
 fi
 
-# Получаем аргументы
 directory=$1
 extension=$2
 archive_name=$3
 
-# Находим все файлы с указанным расширением и архивируем их
 find "$directory" -type f -name "*$extension" | tar -cvf "$archive_name" -T -
 
 echo "Файлы с расширением $extension успешно заархивированы в $archive_name."
@@ -221,22 +213,19 @@ if [ "$#" -ne 2 ]; then
     exit 1
 fi
 
-# Входной и выходной файлы
 input_file="$1"
 output_file="$2"
 
-# Проверка, существует ли входной файл
 if [ ! -f "$input_file" ]; then
     echo "Ошибка: файл $input_file не найден."
     exit 1
 fi
 
-# Заменяем 4 пробела на символ табуляции и записываем результат в новый файл
 sed 's/    /\t/g' "$input_file" > "$output_file"
 
-# Выводим сообщение о завершении
 echo "Файл $input_file был обработан, результат записан в $output_file."
 ```
+![{5442E4E2-04B8-4D9A-9D4B-CC7596343F7E}](https://github.com/user-attachments/assets/8469e02c-71ae-4026-8d63-d928d2b739e4)
 
 ## Задача 10
 ```
