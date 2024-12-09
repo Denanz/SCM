@@ -34,18 +34,24 @@ logfile = log.json
 ```
 - **filesystem**: Путь к tar-архиву с виртуальной файловой системой.
 - **logfile**: Путь к JSON-файлу, где будут храниться логи команд.
+
 # Пример использования программы
 
 1. **Клонируем репозиторий**
+
 ``` bash
 git clone https://github.com/Denanz/SCM.git
 cd SCM/HW1
 ```
+
 2. **Запуск эмулятора**
+
 ``` bash
 python emulator.py config.ini
 ```
+
 3. **Пример использованя**
+
 ``` bash
  virtual_fs> ls
    ['dir1', 'file1.txt', 'file2.txt']
@@ -60,7 +66,9 @@ python emulator.py config.ini
 
    virtual_fs/dir1> exit
 ```
+
 ## Содержание log.json
+
 ``` json
 [
     {
@@ -89,4 +97,5 @@ python emulator.py config.ini
 ```
 
 ## Результаты тестов
+
 ![image](https://github.com/user-attachments/assets/3317f504-a00c-4a04-8938-8298fb4cade5)
