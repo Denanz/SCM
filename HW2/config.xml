@@ -1,0 +1,6 @@
+<config>
+    <paths>
+        <dot>dot</dot>
+        <package>SomePackage</package>
+    </paths>
+</config>
