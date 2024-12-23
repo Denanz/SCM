@@ -1,0 +1,8 @@
+digraph G {
+    "SomePackage" -> "PackageA";
+    "SomePackage" -> "PackageB";
+    "SomePackage" -> "PackageC";
+    "PackageA" -> "PackageC";
+    "PackageB" -> "PackageD";
+    "PackageD" -> "PackageE";
+}

@@ -1,6 +1,6 @@
 <config>
     <paths>
-        <dot>dot</dot>
+        <dot>C:\Program Files\Graphviz\bin\dot.exe</dot>
         <package>SomePackage</package>
     </paths>
 </config>

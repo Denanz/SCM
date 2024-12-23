@@ -1,0 +1,11 @@
+    name = "Example"
+    version = 1.0
+    dependencies = ["libA", "libB"]
+
+    [settings]
+    enable = true
+    timeout = 30
+
+    ; Константы
+    constant1 = "#(5 + 3)"
+    constant2 = "#(sqrt(4))"
